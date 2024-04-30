@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "c649ac1a-578e-469b-91bd-ba60c8f9edda",
+		"name": "mongoose-express-posts-render",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19843147",
+		"_collection_link": "https://martian-capsule-262445.postman.co/workspace/My-Workspace~77fd6e3f-fc13-4924-87b5-63e25cb2e01e/collection/19843147-c649ac1a-578e-469b-91bd-ba60c8f9edda?action=share&source=collection_link&creator=19843147"
+	},
+	"item": [
+		{
+			"name": "取得所有貼文",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://express-posts-52y7.onrender.com/posts",
+					"protocol": "https",
+					"host": [
+						"express-posts-52y7",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增單筆貼文",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"AA\",\r\n    \"content\":\"內容\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://express-posts-52y7.onrender.com/posts",
+					"protocol": "https",
+					"host": [
+						"express-posts-52y7",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除全部貼文",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://express-posts-52y7.onrender.com/posts",
+					"protocol": "https",
+					"host": [
+						"express-posts-52y7",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單筆貼文",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://express-posts-52y7.onrender.com/posts/662618e9380417da68b43144",
+					"protocol": "https",
+					"host": [
+						"express-posts-52y7",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts",
+						"662618e9380417da68b43144"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "編輯單筆貼文",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"123\":\"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://express-posts-52y7.onrender.com/posts/662618e9380417da68b43144",
+					"protocol": "https",
+					"host": [
+						"express-posts-52y7",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts",
+						"662618e9380417da68b43144"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
